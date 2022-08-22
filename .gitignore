@@ -1,0 +1,11 @@
+target
+*.iml
+*.log
+.idea
+
+.project
+.classpath
+.settings/
+*.swp
+
+donotcheckin.txt
