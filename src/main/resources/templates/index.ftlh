@@ -5,17 +5,13 @@
 <@header pageTitle="Home"/>
 
 <body>
-
-<div>
-    <section class="containerOuter">
-
-        <#include "top.ftlh">
+    <#include "top.ftlh">
+    <section class="containerOuter introHomepage" id="intro">
+        <section class="containerInner ">
+        </section>
     </section>
 
-    <footer class="containerOuter">
-        <#include "footer.ftlh">
-    </footer>
-</div>
+    <#include "footer.ftlh">
 
 </body>
 

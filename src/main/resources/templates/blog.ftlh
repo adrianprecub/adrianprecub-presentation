@@ -9,8 +9,11 @@
     <section class="containerOuter">
         <#include "top.ftlh">
     </section>
-
-    <p>Blog coming soon...</p>
+    <section class="containerOuter">
+        <section class="containerInner">
+            <p>Blog coming soon...</p>
+        </section>
+    </section>
 
     <footer class="containerOuter">
         <#include "footer.ftlh">
