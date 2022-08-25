@@ -10,6 +10,7 @@
                 <li><a href="/about">About</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="https://www.youtube.com/channel/UCYM9RtHEpV8W-UH7FeRA6rg" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                <li><a href="https://www.twitter.com/adrianprecub" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             </ul>
         </nav>
     </section>
