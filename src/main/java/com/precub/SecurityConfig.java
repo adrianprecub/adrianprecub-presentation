@@ -20,7 +20,6 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter */{
 
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
-//        http.httpBasic().disable();
         http
                 .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
                 .authorizeRequests()
@@ -48,9 +47,9 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter */{
     public UserDetailsService userDetailsService() {
 
         UserDetails userDetails = User.builder()
-                .username(System.getenv("USER"))
-                .password(System.getenv("PASSWORD"))
-                .roles(System.getenv("ROLES")).build();
+                .username(System.getProperty("USER"))
+                .password(System.getProperty("PASSWORD"))
+                .roles(System.getProperty("ROLES")).build();
 
         return new InMemoryUserDetailsManager(userDetails);
     }
