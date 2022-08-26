@@ -1,5 +1,5 @@
 <#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
-
+<#-- @ftlvariable name="_csrf" type="org.springframework.security.web.csrf.CsrfToken" -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,7 @@
 
     <h1>Log in</h1>
 <form role="form" action="/login" method="post">
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <div>
         <label for="username">Username</label>
         <input type="text" name="username" id="username"/>

@@ -182,12 +182,12 @@ a.current, a.current:visited {
 }
 
 #intro .containerInner {
-    background: #ffffff url('http://localhost:8080/images/adi-banner.png') no-repeat center center;
+    background: #ffffff url('/images/adi-banner.png') no-repeat center center;
     width: auto;
 }
 
 #aboutMeIntro {
-    background: #ffffff url('http://localhost:8080/images/bg-about-photo.jpg') no-repeat center bottom;
+    background: #ffffff url('/images/bg-about-adi-photo.jpg') no-repeat center bottom;
 }
 
 #aboutMeIntro h2, #speakingIntro h2, #podcastIntro h2, #privacyIntro h2 {
@@ -304,7 +304,7 @@ footer .bio img {
 
 /* layout */
 
-.line-tan { background: transparent url('http://localhost:8080/images/bg-line-tan.png') repeat center top; }
+.line-tan { background: transparent url('/images/bg-line-tan.png') repeat center top; }
 
 .containerOuter{
     width: 100%;
@@ -625,7 +625,7 @@ input[type=text], input[type=password], textarea {
 .item-ads { margin: 10px 0 20px 125px; }
 .bioBoxInner {
     padding-left: 125px;
-    background: transparent url('http://localhost:8080/images/photo-scott-tall.jpg') no-repeat left top;
+    background: transparent url('/images/photo-adi-tall.jpg') no-repeat left top;
 }
 
 .bioBoxInner p{
