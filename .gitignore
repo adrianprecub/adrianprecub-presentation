@@ -11,3 +11,4 @@ target
 donotcheckin.txt
 .env
 custom-jre/
+jre-deps.info
