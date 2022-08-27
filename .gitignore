@@ -10,3 +10,4 @@ target
 
 donotcheckin.txt
 .env
+custom-jre/
