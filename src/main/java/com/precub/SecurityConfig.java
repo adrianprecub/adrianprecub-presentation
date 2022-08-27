@@ -47,9 +47,9 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter */{
     public UserDetailsService userDetailsService() {
 
         UserDetails userDetails = User.builder()
-                .username(System.getProperty("USER"))
-                .password(System.getProperty("PASSWORD"))
-                .roles(System.getProperty("ROLES")).build();
+                .username(System.getenv("USER"))
+                .password(System.getenv("PASSWORD"))
+                .roles(System.getenv("ROLES")).build();
 
         return new InMemoryUserDetailsManager(userDetails);
     }
