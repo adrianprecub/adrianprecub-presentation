@@ -23,7 +23,7 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter */{
         http
                 .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
                 .authorizeRequests()
-                    .antMatchers("/", "/about", "/blog", "/js/**", "/css/**", "/images/**").permitAll()
+                    .antMatchers("/", "/about", "/blog", "/js/**", "/css/**", "/images/**", "/robots.txt").permitAll()
                     .anyRequest().authenticated()
 
                 .and()
