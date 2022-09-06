@@ -1,13 +1,13 @@
 <#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
 <!DOCTYPE html>
 <html lang="en">
-<#include "header.ftlh">
-<@header pageTitle="About"/>
+<#include "../header.ftlh">
+<@header pageTitle="Error" seoTitle="Adrian Precub" seoDescription="Personal Blog Java Backend Software Engineering Architecture"/>
 
 <body>
 <div>
     <section class="containerOuter">
-        <#include "top.ftlh">
+        <#include "../top.ftlh">
     </section>
 
     <section class="containerOuter" id="aboutMeIntro">
@@ -18,14 +18,14 @@
     <section class="containerOuter blogBodyContainer">
         <section class="containerInner blogBody">
             <p>
-               Configure cms tokemn
+               Error occurred
             </p>
         </section>
 
     </section>
 
     <footer class="containerOuter">
-        <#include "footer.ftlh">
+        <#include "../footer.ftlh">
     </footer>
 </div>
 

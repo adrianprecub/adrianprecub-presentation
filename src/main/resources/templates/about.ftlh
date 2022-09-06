@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <#include "header.ftlh">
-<@header pageTitle="About"/>
+<@header pageTitle="About" seoTitle="Adrian Precub" seoDescription="Personal Blog Java Backend Software Engineering Architecture"/>
 
 <body>
 <div>

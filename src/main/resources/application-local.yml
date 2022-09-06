@@ -1,12 +1,12 @@
-logging:
-  level:
-    org:
-      springframework:
-        security: DEBUG
-    com:
-      precub: DEBUG
-
 server:
   port: 8080
   servlet:
     context-path: /
+
+logging:
+  level:
+    com:
+      precub: DEBUG
+
+buttercms:
+  key: ${JAVA_BUTTER_CMS_API_KEY:#{null}}

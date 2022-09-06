@@ -10,6 +10,12 @@ html, body, p, table, tbody, td, tr, section, aside, figure, iframe, figcaption,
 
 section, header, footer, nav, aside, article, hgroup, figure, figcaption, aside { display: block; }
 
+.center-align-content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 body {
     color: #333;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

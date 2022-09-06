@@ -5,8 +5,8 @@ server:
 
 logging:
   level:
-    org:
-      springframework:
-        security: DEBUG
     com:
       precub: DEBUG
+
+buttercms:
+  key: ${JAVA_BUTTER_CMS_API_KEY:#{null}}
