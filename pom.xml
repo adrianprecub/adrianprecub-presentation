@@ -41,8 +41,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
+            <groupId>com.buttercms</groupId>
+            <artifactId>buttercmsclient</artifactId>
+            <version>1.11</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

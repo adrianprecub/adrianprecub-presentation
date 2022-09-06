@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <#include "header.ftlh">
-<@header pageTitle="Blog from ButterCMS"/>
+<@header pageTitle="Blog"/>
 
 <body>
 <div>
@@ -11,9 +11,7 @@
     </section>
     <section class="containerOuter">
         <section class="containerInner">
-            <#list blogs as blog>
-                <li><a href="/blog/${blog['slug']}">${blog['title']}</a></li>
-            </#list>
+            <p>Blog coming soon...</p>
         </section>
     </section>
 

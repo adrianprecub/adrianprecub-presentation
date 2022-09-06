@@ -1,14 +1,9 @@
 package com.precub;
 
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.HashMap;
-import java.util.List;
 
 @Controller
 public class MainController {
@@ -36,11 +31,11 @@ public class MainController {
         return new ModelAndView("about");
     }
 
-    @GetMapping(value = "/blog")
-    public ModelAndView blog(Model model) {
-
-        return new ModelAndView("blog");
-    }
+//    @GetMapping(value = "/blog")
+//    public ModelAndView blog(Model model) {
+//
+//        return new ModelAndView("blog");
+//    }
 
 
 
