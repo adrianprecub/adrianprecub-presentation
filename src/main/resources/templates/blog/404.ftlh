@@ -1,4 +1,3 @@
-<#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
 <!DOCTYPE html>
 <html lang="en">
 <#include "../header.ftlh">

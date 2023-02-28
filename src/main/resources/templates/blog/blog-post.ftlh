@@ -9,13 +9,14 @@
     <section class="containerOuter">
         <#include "../top.ftlh">
     </section>
-    <section class="containerOuter">
-        <section class="containerInner">
-            <p>
-                Author: ${post.author}
-                <br>
-                Body: ${post.body}
-            </p>
+    <section class="containerOuter blogHeader line-tan">
+        <section class="containerInnerNarrow">
+            <h2 class="blogTitle"><a href="/blog/${post['slug']}">${post['title']}</a></h2>
+        </section>
+    </section>
+    <section class="containerOuter blogBodyContainer">
+        <section class="containerInner blogBody">
+            ${post['body']?no_esc}
         </section>
     </section>
 

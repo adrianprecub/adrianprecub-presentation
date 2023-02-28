@@ -2,6 +2,8 @@ package com.precub.blog;
 
 import com.precub.blog.dto.BlogsDto;
 import com.precub.blog.service.BlogService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,14 +11,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
+
 @Controller
 public class BlogController {
 
 
     private final BlogService blogService;
 
-    public BlogController(BlogService blogService) {
+    private final Executor executor;
+
+    public BlogController(BlogService blogService, Executor executor) {
         this.blogService = blogService;
+        this.executor = executor;
     }
 
     @GetMapping("/blog")
@@ -29,6 +37,16 @@ public class BlogController {
         model.addAttribute("breadcrumbText", blogsDto.getBreadcrumbText());
         return new ModelAndView("blog/blog");
     }
+
+    @GetMapping("/testasync")
+    public CompletableFuture<ResponseEntity<String>> testAsync() {
+        return CompletableFuture.supplyAsync(() -> {
+            System.out.println(Thread.currentThread().getName() + "_____controller");
+           return new ResponseEntity<>("async result", HttpStatus.OK);
+        });
+    }
+
+
 
     @GetMapping("/blog/{slug}")
     public String blogById(@PathVariable String slug, Model model) {

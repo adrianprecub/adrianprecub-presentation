@@ -1,4 +1,3 @@
-<#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
 <!DOCTYPE html>
 <html>
 <#include "header.ftlh">
@@ -7,8 +6,7 @@
 <body>
     <#include "top.ftlh">
     <section class="containerOuter introHomepage" id="intro">
-        <section class="containerInner ">
-        </section>
+        <section class="containerInner"></section>
     </section>
 
     <section class="containerOuter line-tan" id="bannerText">

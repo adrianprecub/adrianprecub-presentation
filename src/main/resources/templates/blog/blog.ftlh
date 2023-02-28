@@ -1,4 +1,3 @@
-<#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
 <!DOCTYPE html>
 <html>
 <#include "../header.ftlh">
@@ -9,13 +8,20 @@
     <section class="containerOuter">
         <#include "../top.ftlh">
     </section>
-    <section class="containerOuter">
-        <section class="containerInner">
-            <#list posts as post>
-                <li><a href="/blog/${post['slug']}">${post['title']}</a></li>
-            </#list>
-        </section>
-    </section>
+    <article>
+        <#list posts as post>
+            <section class="containerOuter blogHeader line-tan">
+                <section class="containerInnerNarrow">
+                    <h2 class="blogTitle"><a href="/blog/${post['slug']}">${post['title']}</a></h2>
+                </section>
+            </section>
+            <section class="containerOuter blogBodyContainer">
+                <section class="containerInner blogBody">
+                        ${post['body']?no_esc}
+                </section>
+            </section>
+        </#list>
+    </article>
 
     <footer class="containerOuter">
         <#include "../footer.ftlh">

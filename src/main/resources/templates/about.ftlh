@@ -1,4 +1,3 @@
-<#-- @ftlvariable name="currentUser" type="com.precub.CurrentUser" -->
 <!DOCTYPE html>
 <html lang="en">
 <#include "header.ftlh">
@@ -20,7 +19,7 @@
             <p>
                 I think we can all agree I am no web designer by all means. Exhibit A, this website!
                 <br>
-                I'm a <a href="http://github.com/adrianprecub">programmer</a> focussed on backend systems and all things related.
+                I'm a <a href="http://github.com/adrianprecub">developer</a> focussed on backend systems and all things related.
                 <br>
                 I <a href="http://twitter.com/adrianprecub">tweet</a> about software architecture, kubernetes,  coding best practices and IoT stuff.
                 <br>
