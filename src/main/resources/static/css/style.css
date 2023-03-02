@@ -188,14 +188,32 @@ a.current, a.current:visited {
 }
 
 #intro .containerInner {
-    background: #ffffff url('/images/adi-banner.png') no-repeat center center;
+    /*background: #ffffff url('/images/adi-banner.png') no-repeat center center;*/
     width: auto;
+    background-color: #ffffff;
+    background-image: url("/images/adi-banner.png");
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when
+    the content height is greater than the image height */
+    /*background-attachment: fixed;*/
+
+    /* This is what makes the background image rescale based on its container's size */
+    /*background-size: cover;*/
 }
 
 #aboutMeIntro {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #ffffff url('/images/bg-about-adi-photo.jpg') no-repeat center center;
+    /*background: #ffffff url('/images/bg-about-adi-photo.jpg') no-repeat center center;*/
+    background-color: #ffffff;
+    background-image: url("/images/bg-about-adi-photo.jpg");
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
 }
 
 .line-tan { background: transparent url('/images/bg-line-tan.png') repeat center top; }
