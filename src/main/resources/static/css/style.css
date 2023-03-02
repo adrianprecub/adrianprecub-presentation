@@ -198,6 +198,12 @@ a.current, a.current:visited {
     background: #ffffff url('/images/bg-about-adi-photo.jpg') no-repeat center center;
 }
 
+.line-tan { background: transparent url('/images/bg-line-tan.png') repeat center top; }
+.bioBoxInner {
+    padding-left: 125px;
+    background: transparent url('/images/photo-adi-tall.jpg') no-repeat left top;
+}
+
 #aboutMeIntro h2, #speakingIntro h2, #podcastIntro h2, #privacyIntro h2 {
     font-size: 300%;
     color: #fff;
@@ -222,8 +228,6 @@ a.current, a.current:visited {
 
 
 .inlineImage { display: inline-block!important; margin: 0!important;}
-
-
 
 #bannerText .containerInner {
     position: relative;
@@ -312,7 +316,6 @@ footer .bio img {
 
 /* layout */
 
-.line-tan { background: transparent url('/images/bg-line-tan.png') repeat center top; }
 
 .containerOuter{
     width: 100%;
@@ -347,157 +350,15 @@ footer .bio img {
     overflow: hidden;
 }
 
-
-/* calendar*/
-
-.calendarContainer {
-    padding: 2em 0;
-    background: #fff;
-}
-
-.lCalendarStyle {
-    width: 1000px;
-    font-size: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.lCalendarStyle td {
-    border-bottom: 1px solid #eee;
-    border-right: 1px solid #eee;
-    padding: 0.5em;
-}
-
-.lCalendarStyle tr:first-child td:first-child {
-    border: 0px;
-}
-.lCalendarStyle td:first-child {
-    border-left: 1px solid #eee
-}
-
-.lCalendarMonthYearRow td {
-    border: none;
-    font-size: 120%;
-    font-weight: bold;
-}
-
-.lCalendarDayNameRow {
-    background-color: #575e5b;
-    color: #fff;
-    padding: 0.6em 0.4em;
-}
-
-
 hr {
     border-color: #e2842c;
     color: #e2842c;
 }
-.categoryListXmlLinkStyle img { display: inline-block!important; margin: 0 0.2em 0 0.1em; }
-/* comment section */
 
 .bodyContentStyle {
     background-color: #fff;
 
 }
-
-.commentBoxStyle {
-    margin-bottom: 1.5em;
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 0 1.5em 0;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-    min-height: 120px;
-    font-size: 90%;
-}
-
-.commentBoxStyle:last-child { border-bottom: none; }
-
-#ctl01_lblCommentPreview {
-    font-weight: bold;
-}
-.commentViewBoxStyle {
-    width: 100%;
-    background-color: #f5f5f5;
-    padding: 1em 0;
-}
-
-.commentViewControlStyle {
-    margin-top: 1em;
-}
-
-.commentViewLivePreview {
-    font-weight: bold;
-    padding: 1em 0;
-    display: inline-block;
-}
-
-.commentViewTableStyle {
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.commentViewTableStyle td {
-    padding-right: 15px;
-    padding-bottom: 0em;
-}
-
-.commentDateStyle {
-    color: #c0c0c0;
-    overflow: hidden;
-    padding: 5px 10px;
-    position: absolute;
-    right: 0;
-    font-size: 80%;
-}
-
-.commentBodyStyle {
-    margin-bottom: 19px;
-    position: relative;
-    top: 35px;
-    left: 130px;
-    width: 620px;
-    padding-bottom: 1em;
-    word-break: break-word;
-}
-
-.commentBodyStyle br { display:block; margin-top:10px; line-height:10px; content: ' '}
-
-.commentGravatarBlock {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.commentGravatar {
-    width: 110px;
-    height: 110px;
-    margin-left: 0!important;
-}
-.commentPermalinkStyle {
-    position: absolute;
-    top: 0;
-    left: 130px;
-    font-weight: bold;
-    word-break: break-all;
-}
-
-.commentHelperText {
-    font-size: 80%;
-}
-
-.commentHelperText code {
-    font-size: 120%;
-}
-
-.commentBoxAuthorStyle {
-    background-color: #f6f6ea;
-    border-top: 20px solid #F6F6EA;
-
-}
-
 
 input[type=text], input[type=password], textarea {
     border: 1px solid #cfcfcf;
@@ -565,11 +426,6 @@ input[type=text], input[type=password], textarea {
     border-color:#fff transparent;
 }
 
-.col-fixedHeight {
-    min-height: 450px;
-    padding: 1px 0;
-}
-
 #mainContent h3 {
     font-weight: bold;
     padding: 2em 0 2em 1em;
@@ -589,27 +445,6 @@ input[type=text], input[type=password], textarea {
     list-style: none;
 }
 
-.item-footer {
-    background-color: #5b2d26;
-    color: #c7c7c7;
-    padding-left: 115px;
-}
-
-.item-footer-tools { float: right; margin-right: 2em; line-height: 2.7;}
-
-.about-scott {
-    width: 100%;
-    padding-left: 125px;
-    padding-right: 125px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    background-color: #f6f6ea;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 1.5em;
-    position: relative;
-    overflow:hidden;
-}
 
 .bioBox {
     width: 460px;
@@ -629,11 +464,7 @@ input[type=text], input[type=password], textarea {
     color: #575E5B;
 }
 
-.item-ads { margin: 10px 0 20px 125px; }
-.bioBoxInner {
-    padding-left: 125px;
-    background: transparent url('/images/photo-adi-tall.jpg') no-repeat left top;
-}
+
 
 .bioBoxInner p{
     width: 100%;
@@ -644,16 +475,6 @@ input[type=text], input[type=password], textarea {
     font-size: 80%;
 }
 
-.ads-box {
-    float: right;
-}
-.ads-box strong { display: inline-block; margin-bottom: 1em;  color: #575E5B;}
-
-.ad-item { float: left; margin-left: 1em;}
-.ad-item img{
-    margin: 0;
-}
-
 .chocolate { background-color: #5b2d26; }
 .yellow { background-color: #fbba2c;}
 .burntSienna { background-color: #83382b;}
@@ -661,16 +482,6 @@ input[type=text], input[type=password], textarea {
 .darkbrown { background-color: #291f16; }
 .darkteal { background-color: #575e5b; }
 
-.signInContainerStyle { background-color: #fff; }
-
-
-/* The default gists stuff is ALL messed up lately */
-.gist {
-    line-height: 100%!important;
-    font-size: 100%!important;
-    padding-left: 125px;
-    padding-right: 100px;
-}
 
 .blogHeader { }
 
@@ -748,21 +559,7 @@ input[type=text], input[type=password], textarea {
     overflow: visible!important;
 }
 
-@media (prefers-color-scheme: light) {
-    .blogBody {
-        border-left: 1px solid #303030;
-        border-right: 1px solid #303030;
-    }
-}
 
-.ad-sponsoreditem {
-    position: absolute;
-    font-size: 80%;
-    /*right: -55px;*/
-    right: -165px;
-    z-index: 50;
-    background-color: #eee;
-}
 
 .blogBodyNarrow {
     width: 659px;
@@ -841,8 +638,6 @@ input[type=text], input[type=password], textarea {
 
 @media only screen and (max-width : 1000px) {
 
-    .ad-sponsoreditem, .ads-box { display: none; }
-
     .containerInner, .containerInnerNarrow, .col-left, .col-right, .searchBarNav { width: 100%!important; margin: 0 auto; overflow: auto; -moz-box-sizing: border-box; box-sizing: border-box; }
     .containerInnerNarrow { padding-left:1em!important; padding-right: 1em!important; }
     .blogHeader .blogTitle { text-align: center; font-size: 125%; }
@@ -886,8 +681,6 @@ input[type=text], input[type=password], textarea {
         overflow: hidden!important;
     }
 
-
-
     .blogBody p, .blogBody blockquote, .blogBody h1, .blogBody h2, .blogBody h3, .blogBody h4, .blogBody ul, .blogBody ol, .blogBody div.misc, .blogBody div.syntaxhighlighter, .blogBody code, .blogBody pre, .blogBodyNarrow code, .blogBodyNarrow pre {
         width: 100%;
         float: none;
@@ -927,28 +720,6 @@ input[type=text], input[type=password], textarea {
         display: inline-block!important;
     }
 
-    .about-scott {
-        padding-left: 10px; padding-right: 0;
-    }
-
-    .item-ads {
-        display: none; /* for now */
-    }
-
-    .commentBoxStyle { width: 100%; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; position: relative; }
-    .commentDateStyle, .commentGravatarBlock, .commentPermalinkStyle { position: absolute; }
-    .commentDateStyle { top: 0px; right: 15px; display: none; }
-    .commentPermalinkStyle { top: 0px; left: 80px; }
-    .commentGravatar { height: 55px; width: 55px; }
-    .commentGravatarBlock { top: 0px; left: 15px; }
-    .commentBodyStyle {
-        word-wrap: break-word;
-        position: static;
-        width: auto;
-        margin-left: 66px;
-        margin-top: 15px;
-    }
-    .commentViewTableStyle { width: 100%; }
 
     textarea.commentViewControlStyle { height: 150px; }
 
@@ -980,42 +751,28 @@ input[type=text], input[type=password], textarea {
         background-size: cover;
     }
 
-    #booksIntro, #podcastIntro, #privacyIntro, #intro .containerInner { background-size: cover; }
-    #speakingIntro { background-size: cover; }
+    #privacyIntro, #intro .containerInner { background-size: cover; }
     #aboutMeIntro { background-size: cover; background-position: 10px;}
 
     #aboutMeIntro h2, #speakingIntro h2, #newsletterIntro h2, #podcastIntro h2, #privacyIntro h2, #booksIntro h2, .hIntro { margin: 1.5em 0;}
-    .col-fixedHeight { min-height: auto; }
+
 
     .introHomepage .containerInner{ height: auto; }
 
     #search, #archives { float: none; clear: both; width: 100%; text-align: center;}
     #searchString { width: 240px; }
 
-
-    /* Hack that doesn't work well to get SyntaxHighlighter
-     to look decent on an iPhone */
-    pre {
-        -webkit-text-size-adjust: 82%;
-    }
-    code {
-        -webkit-text-size-adjust: 82%;
-    }
-
-    /* undo GIST padding for phones. Still lame. */
-    .gist {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-
-
 }
+
 
 @media (prefers-color-scheme: light) {
     body {
         color: #b0b0b0;
         background-color: #ffffff;
+    }
+    .blogBody {
+        border-left: 1px solid #303030;
+        border-right: 1px solid #303030;
     }
 
     .containerOuter {
