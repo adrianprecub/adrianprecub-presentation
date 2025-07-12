@@ -1,17 +1,27 @@
 <#-- @ftlvariable name="_csrf" type="org.springframework.security.web.csrf.CsrfToken" -->
-<section class="containerOuter line-tan" id="topbar">
-    <section class="containerInner">
-        <h1>
-            <a href="/">Adrian Precub</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="https://www.youtube.com/channel/UCYM9RtHEpV8W-UH7FeRA6rg" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-                <li><a href="https://www.twitter.com/adrianprecub" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<header class="modern-header" id="topbar">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/" class="logo-link">
+                <span class="logo-text">Adrian Precub</span>
+                <span class="logo-subtitle">Backend Engineer</span>
+            </a>
+        </div>
+        
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/blog" class="nav-link">Blog</a></li>
+                <li><a href="/apps" class="nav-link">Apps</a></li>
+                <li><a href="https://www.youtube.com/channel/UCYM9RtHEpV8W-UH7FeRA6rg" target="_blank" rel="noopener noreferrer" class="nav-link external">YouTube</a></li>
+                <li><a href="https://www.twitter.com/adrianprecub" target="_blank" rel="noopener noreferrer" class="nav-link external">Twitter</a></li>
             </ul>
         </nav>
-    </section>
-</section>
+    </div>
+</header>

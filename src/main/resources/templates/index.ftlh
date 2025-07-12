@@ -5,17 +5,24 @@
 
 <body>
     <#include "top.ftlh">
-    <section class="containerOuter introHomepage" id="intro">
-        <section class="containerInner"></section>
-    </section>
-
-    <section class="containerOuter line-tan" id="bannerText">
-        <section class="containerInner">
-            <p>
-                I'm a backend software engineer with a passion for IoT. <br/>
-                I enjoy taking stuff apart to see how they work. Putting them back together is also fun, especially when you have parts and screws remaining on the side but the thing somehow <b>still works</b>.
-            </p>
-        </section>
+    <section class="hero-section" id="intro">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Backend Software Engineer</h1>
+                <p class="hero-subtitle">Passionate about building scalable systems and IoT solutions</p>
+                <p class="hero-description">
+                    I enjoy taking stuff apart to see how they work. Putting them back together is also fun, 
+                    especially when you have parts and screws remaining on the side but the thing somehow <strong>still works</strong>.
+                </p>
+                <div class="hero-cta">
+                    <a href="/about" class="btn btn-primary">Learn More About Me</a>
+                    <a href="/apps" class="btn btn-outline">View My Apps</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/adi-banner.png" alt="Adrian Precub" class="profile-image">
+            </div>
+        </div>
     </section>
 
     <#include "footer.ftlh">

@@ -31,6 +31,12 @@ public class MainController {
         return new ModelAndView("about");
     }
 
+    @GetMapping(value = "/apps")
+    public ModelAndView apps(Model model) {
+
+        return new ModelAndView("apps");
+    }
+
 //    @GetMapping(value = "/blog")
 //    public ModelAndView blog(Model model) {
 //
