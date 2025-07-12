@@ -17,7 +17,7 @@ public class GenericLoggingFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
 
-        System.out.println(Thread.currentThread().getName() + "_____filter" + httpServletRequest.getMethod() + "_____" + httpServletRequest.getRequestURI());
+        System.out.println(Thread.currentThread().getName() + "_____filter_____" + httpServletRequest.getMethod() + "_____" + httpServletRequest.getRequestURI());
 
         chain.doFilter(request, response);
     }

@@ -4,7 +4,7 @@
         <div class="logo">
             <a href="/" class="logo-link">
                 <span class="logo-text">Adrian Precub</span>
-                <span class="logo-subtitle">Backend Engineer</span>
+                <span class="logo-subtitle">Staff Engineer</span>
             </a>
         </div>
         

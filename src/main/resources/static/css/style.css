@@ -47,8 +47,13 @@ ul  {
 
 ul li {
     margin-bottom: 0.5em;
-    list-style-type:square;
+    list-style-type: square;
     list-style-position: inside;
+}
+
+/* Remove list styles from navigation */
+.nav-list li {
+    list-style: none;
 }
 
 ul ul, ul ol, ol ol, ol ul {

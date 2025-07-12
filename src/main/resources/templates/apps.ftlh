@@ -22,9 +22,11 @@
             
             <div class="apps-grid">
                 <div class="app-card">
-                    <h3><a href="https://adrianprecub.github.io/screen-olympics-support/" target="_blank" rel="noopener noreferrer">Screen Support</a></h3>
+                    <h3><a href="https://adrianprecub.github.io/screen-olympics-support/" target="_blank" rel="noopener noreferrer">Screen Olympics</a></h3>
                     <p class="app-description">
-                        Support page for Screen Olympics - a screen time management app for kids. Helps parents create healthy digital habits through gamification and fun activities.
+                        Support page for Screen Olympics - a screen time management app for kids.
+                        <br/>
+                        Helps parents create healthy digital habits through gamification and fun activities.
                     </p>
                     <div class="app-meta">
                         <span class="app-category">iOS App</span>
