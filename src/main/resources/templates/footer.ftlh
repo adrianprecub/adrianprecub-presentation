@@ -1,18 +1,29 @@
 <footer class="containerOuter">
     <section class="containerInner">
-        <div class="copyright">
-            <i>
-                Copyright (c) ${.now?string('yyyy')} <a href="/">Adrian Precub</a>,
-                <br>
-                All Rights Reserved.
-                <br>
-                <section class="center-align-content">
-                    Blog powered by: <a href="https://buttercms.com">
-                        <img width="100" src="https://cdn.buttercms.com/PBral0NQGmmFzV0uG7Q6" alt="logo"
-                             loading="lazy">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/adrianprecub" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <span class="icon">💻</span> GitHub
+                </a>
+                <a href="/blog" class="footer-link">
+                    <span class="icon">📝</span> Blog
+                </a>
+                <a href="/apps" class="footer-link">
+                    <span class="icon">🚀</span> Projects
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>
+                    Copyright (c) ${.now?string('yyyy')} <a href="/">Adrian Precub</a>. All Rights Reserved.
+                </p>
+                <div class="powered-by">
+                    <span>Blog powered by:</span>
+                    <a href="https://buttercms.com" target="_blank" rel="noopener noreferrer">
+                        <img width="80" src="https://cdn.buttercms.com/PBral0NQGmmFzV0uG7Q6" alt="ButterCMS" loading="lazy">
                     </a>
-                </section>
-            </i>
+                </div>
+            </div>
         </div>
 
     </section>

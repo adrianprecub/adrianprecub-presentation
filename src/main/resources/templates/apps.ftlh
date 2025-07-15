@@ -16,36 +16,76 @@
     </section>
     <section class="containerOuter blogBodyContainer">
         <section class="containerInner blogBody">
-            <p>
-                Here are some apps and projects I've built:
+            <p class="apps-intro">
+                Here are some apps and projects I've built. Each project includes links to GitHub repositories and live demos where available.
             </p>
             
-            <div class="apps-grid">
-                <div class="app-card">
-                    <h3><a href="https://adrianprecub.github.io/screen-olympics-support/" target="_blank" rel="noopener noreferrer">Screen Olympics</a></h3>
-                    <p class="app-description">
-                        Support page for Screen Olympics - a screen time management app for kids.
-                        <br/>
-                        Helps parents create healthy digital habits through gamification and fun activities.
-                    </p>
-                    <div class="app-meta">
-                        <span class="app-category">iOS App</span>
-                        <span class="app-status">Live</span>
+            <div class="projects-grid">
+                <!-- Screen Olympics Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Screen Olympics</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/adrianprecub/ScreenOlympics" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                                <span class="icon">📱</span> GitHub
+                            </a>
+                            <a href="https://adrianprecub.github.io/screen-olympics-support/" target="_blank" rel="noopener noreferrer" class="btn btn-demo">
+                                <span class="icon">🔗</span> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">
+                            A comprehensive screen time management app that helps parents create healthy digital habits for their kids through gamification and fun activities.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge swift">Swift</span>
+                            <span class="tech-badge swiftui">SwiftUI</span>
+                            <span class="tech-badge coredata">Core Data</span>
+                            <span class="tech-badge ios">iOS 15+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Website Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Personal Website</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/adrianprecub/adrianprecub-presentation" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                                <span class="icon">🌐</span> GitHub
+                            </a>
+                            <a href="/" class="btn btn-demo">
+                                <span class="icon">🔗</span> Live Site
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">
+                            A modern, responsive personal website built with Spring Boot, featuring a blog component powered by ButterCMS and containerized deployment.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge java">Java</span>
+                            <span class="tech-badge spring">Spring Boot</span>
+                            <span class="tech-badge freemarker">FreeMarker</span>
+                            <span class="tech-badge docker">Docker</span>
+                            <span class="tech-badge buttercms">ButterCMS</span>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="more-apps-section">
-                <h3>More Apps Coming Soon</h3>
+            <div class="more-projects-section">
+                <h3>More Projects Coming Soon</h3>
                 <p>I'm currently working on several exciting projects. Check back soon to see what's in the pipeline!</p>
-                <div class="coming-soon-placeholder">
-                    <div class="placeholder-card">
-                        <div class="placeholder-content">
-                            <h4>New Project</h4>
-                            <p>Something awesome is being built...</p>
-                            <span class="status-badge">In Development</span>
-                        </div>
-                    </div>
+                <div class="github-cta">
+                    <a href="https://github.com/adrianprecub" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <span class="icon">💻</span> View All Projects on GitHub
+                    </a>
                 </div>
             </div>
         </section>

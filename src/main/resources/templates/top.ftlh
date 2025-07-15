@@ -19,8 +19,6 @@
                 <li><a href="/about" class="nav-link">About</a></li>
                 <li><a href="/blog" class="nav-link">Blog</a></li>
                 <li><a href="/apps" class="nav-link">Apps</a></li>
-                <li><a href="https://www.youtube.com/channel/UCYM9RtHEpV8W-UH7FeRA6rg" target="_blank" rel="noopener noreferrer" class="nav-link external">YouTube</a></li>
-                <li><a href="https://www.twitter.com/adrianprecub" target="_blank" rel="noopener noreferrer" class="nav-link external">Twitter</a></li>
             </ul>
         </nav>
     </div>
