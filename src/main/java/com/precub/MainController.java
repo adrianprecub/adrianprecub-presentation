@@ -25,16 +25,10 @@ public class MainController {
         return new ModelAndView("success");
     }
 
-    @GetMapping(value = "/about")
-    public ModelAndView about(Model model) {
-
-        return new ModelAndView("about");
-    }
-
-    @GetMapping(value = "/apps")
+    @GetMapping(value = "/projects")
     public ModelAndView apps(Model model) {
 
-        return new ModelAndView("apps");
+        return new ModelAndView("projects");
     }
 
 //    @GetMapping(value = "/blog")

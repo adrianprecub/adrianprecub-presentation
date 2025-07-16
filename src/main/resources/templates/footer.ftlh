@@ -8,7 +8,7 @@
                 <a href="/blog" class="footer-link">
                     <span class="icon">📝</span> Blog
                 </a>
-                <a href="/apps" class="footer-link">
+                <a href="/projects" class="footer-link">
                     <span class="icon">🚀</span> Projects
                 </a>
             </div>

@@ -16,9 +16,8 @@
             </button>
             <ul class="nav-list">
                 <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/projects" class="nav-link">Projects</a></li>
                 <li><a href="/blog" class="nav-link">Blog</a></li>
-                <li><a href="/apps" class="nav-link">Apps</a></li>
             </ul>
         </nav>
     </div>

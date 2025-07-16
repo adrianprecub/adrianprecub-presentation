@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <#include "header.ftlh">
-<@header pageTitle="Apps" seoTitle="Adrian Precub - Apps" seoDescription="Personal Apps and Projects by Adrian Precub"/>
+<@header pageTitle="Projects" seoTitle="Adrian Precub - Projects" seoDescription="Personal Apps and Projects by Adrian Precub"/>
 
 <body>
 <div>
@@ -11,7 +11,7 @@
 
     <section class="containerOuter" id="appsIntro">
         <section class="containerInnerNarrow">
-            <h2>Apps</h2>
+            <h2>Projects</h2>
         </section>
     </section>
     <section class="containerOuter blogBodyContainer">
