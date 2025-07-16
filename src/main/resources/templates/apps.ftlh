@@ -17,7 +17,7 @@
     <section class="containerOuter blogBodyContainer">
         <section class="containerInner blogBody">
             <p class="apps-intro">
-                Here are some apps and projects I've built. Each project includes links to GitHub repositories and live demos where available.
+                Here are some apps and projects I've built. Each project includes links to the GitHub repository.
             </p>
             
             <div class="projects-grid">
@@ -26,11 +26,8 @@
                     <div class="project-header">
                         <h3>Screen Olympics</h3>
                         <div class="project-links">
-                            <a href="https://github.com/adrianprecub/ScreenOlympics" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                            <a href="https://github.com/adrianprecub/screen-olympics-support" target="_blank" rel="noopener noreferrer" class="btn btn-github">
                                 <span class="icon">📱</span> GitHub
-                            </a>
-                            <a href="https://adrianprecub.github.io/screen-olympics-support/" target="_blank" rel="noopener noreferrer" class="btn btn-demo">
-                                <span class="icon">🔗</span> Live Demo
                             </a>
                         </div>
                     </div>
@@ -56,9 +53,6 @@
                         <div class="project-links">
                             <a href="https://github.com/adrianprecub/adrianprecub-presentation" target="_blank" rel="noopener noreferrer" class="btn btn-github">
                                 <span class="icon">🌐</span> GitHub
-                            </a>
-                            <a href="/" class="btn btn-demo">
-                                <span class="icon">🔗</span> Live Site
                             </a>
                         </div>
                     </div>

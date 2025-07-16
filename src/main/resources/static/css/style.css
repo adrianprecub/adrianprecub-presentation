@@ -1152,6 +1152,7 @@ input[type=text], input[type=password], textarea {
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
 }
 
 .project-card:hover {
@@ -1167,6 +1168,7 @@ input[type=text], input[type=password], textarea {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    text-align: left;
 }
 
 .project-header h3 {
@@ -1256,18 +1258,24 @@ input[type=text], input[type=password], textarea {
 
 .project-details {
     padding: 1.5rem;
+    text-align: left;
 }
 
-.project-description {
+.project-details .project-description {
     color: #6c757d;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    text-align: left;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: auto !important;
 }
 
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: flex-start;
 }
 
 .tech-badge {
@@ -1362,6 +1370,388 @@ input[type=text], input[type=password], textarea {
     }
     
     .tech-stack {
+        justify-content: flex-start;
+    }
+}
+
+/* Modern Blog page styles - matching Apps page */
+.blog-intro {
+    font-size: 1.125rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.blog-post-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.blog-post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.post-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.post-header h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.post-title-link {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-title-link:hover {
+    color: #3498db;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.post-date {
+    color: #6c757d;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: #e9ecef;
+    color: #495057;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-excerpt {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.post-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #6c757d;
+}
+
+.no-posts h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design for Blog */
+@media only screen and (max-width: 768px) {
+    .blog-posts-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .post-tags {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .blog-intro {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .blog-post-card {
+        border-radius: 8px;
+    }
+    
+    .post-header, .post-content {
+        padding: 1rem;
+    }
+    
+    .post-tags {
+        justify-content: center;
+    }
+    
+    .no-posts {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Individual Blog Post Page Styles */
+.blog-post-article {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.post-article-header {
+    padding: 2rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb-link {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: #3498db;
+}
+
+.post-article-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.post-article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.post-article-date {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.post-article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.post-article-content {
+    padding: 2rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.post-article-content h1,
+.post-article-content h2,
+.post-article-content h3,
+.post-article-content h4,
+.post-article-content h5,
+.post-article-content h6 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.post-article-content h1 { font-size: 2rem; }
+.post-article-content h2 { font-size: 1.75rem; }
+.post-article-content h3 { font-size: 1.5rem; }
+.post-article-content h4 { font-size: 1.25rem; }
+.post-article-content h5 { font-size: 1.125rem; }
+.post-article-content h6 { font-size: 1rem; }
+
+.post-article-content p {
+    margin-bottom: 1.5rem;
+    color: #495057;
+}
+
+.post-article-content ul,
+.post-article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-article-content li {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.post-article-content blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid #3498db;
+    background: #f8f9fa;
+    border-radius: 0 8px 8px 0;
+}
+
+.post-article-content blockquote p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #495057;
+}
+
+.post-article-content code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: #e83e8c;
+}
+
+.post-article-content pre {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #e9ecef;
+}
+
+.post-article-content pre code {
+    background: none;
+    padding: 0;
+    color: #495057;
+}
+
+.post-article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-article-content a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.post-article-content a:hover {
+    border-bottom-color: #3498db;
+}
+
+.post-article-footer {
+    padding: 1.5rem 2rem 2rem 2rem;
+    border-top: 1px solid #e9ecef;
+    background: #f8f9fa;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.post-navigation .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design for Individual Blog Post */
+@media only screen and (max-width: 768px) {
+    .post-article-header {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+    
+    .post-article-title {
+        font-size: 2rem;
+    }
+    
+    .post-article-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .post-article-tags {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .post-article-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .post-article-footer {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .post-article-title {
+        font-size: 1.75rem;
+    }
+    
+    .post-article-content {
+        padding: 1rem;
+    }
+    
+    .post-article-content h1 { font-size: 1.75rem; }
+    .post-article-content h2 { font-size: 1.5rem; }
+    .post-article-content h3 { font-size: 1.25rem; }
+    .post-article-content h4 { font-size: 1.125rem; }
+    .post-article-content h5 { font-size: 1rem; }
+    .post-article-content h6 { font-size: 0.875rem; }
+    
+    .post-article-tags {
         justify-content: center;
     }
 }
