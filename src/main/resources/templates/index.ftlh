@@ -16,7 +16,7 @@
                     <br/>
                     I specialize in applications performance tuning and <a href="https://engineering.tomtom.com/aks-tcp-captures/" target="_blank" rel="noopener noreferrer">figuring out network problems in general</a>.
                     <br/>
-                    Also gave a talk about <a href="https://www.youtube.com/watch?v=nzkZ29Ts6Co" target="_blank" rel="noopener noreferrer">networking issues at DevWorld</a>, and also a <a href="https://www.k8spodcast.nl/afleveringen/aflevering-62-the-great-reset-packet-mystery-how-tcp-analysis-saved-the-day" target="_blank" rel="noopener noreferrer">podcast interview</a> about the same topic.
+                    Also gave a talk about <a href="https://www.youtube.com/watch?v=nzkZ29Ts6Co" target="_blank" rel="noopener noreferrer">networking issues at DevWorld</a>, and a <a href="https://www.k8spodcast.nl/afleveringen/aflevering-62-the-great-reset-packet-mystery-how-tcp-analysis-saved-the-day" target="_blank" rel="noopener noreferrer">podcast interview</a> about the same topic.
                 </p>
                 <div class="hero-cta">
                     <a href="/projects" class="btn btn-outline">Check Out My Projects</a>
