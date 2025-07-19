@@ -46,6 +46,31 @@
                     </div>
                 </div>
                 
+                <!-- Conditional Buffer Appender Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Conditional Buffer Appender</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/adrianprecub/conditional-buffer-appender" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                                <span class="icon">📝</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <p class="project-description">
+                            A custom Logback appender that conditionally buffers log events based on configurable criteria, improving logging performance and reducing noise in production environments.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge java">Java</span>
+                            <span class="tech-badge logback">Logback</span>
+                            <span class="tech-badge slf4j">SLF4J</span>
+                            <span class="tech-badge maven">Maven</span>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Personal Website Project -->
                 <div class="project-card">
                     <div class="project-header">
