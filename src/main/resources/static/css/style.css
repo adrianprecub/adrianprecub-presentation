@@ -1140,7 +1140,7 @@ input[type=text], input[type=password], textarea {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem 0;
 }
