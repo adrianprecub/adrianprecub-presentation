@@ -33,6 +33,24 @@
                     ${post['body']?no_esc}
                 </div>
                 
+                <div class="comments-section">
+                    <script src="https://giscus.app/client.js"
+                            data-repo="adrianprecub/adrianprecub-presentation"
+                            data-repo-id="R_kgDOH3SKlg"
+                            data-category="General"
+                            data-category-id="DIC_kwDOH3SKls4CvI-G"
+                            data-mapping="title"
+                            data-strict="0"
+                            data-reactions-enabled="1"
+                            data-emit-metadata="0"
+                            data-input-position="bottom"
+                            data-theme="noborder_light"
+                            data-lang="en"
+                            crossorigin="anonymous"
+                            async>
+                    </script>
+                </div>
+                
                 <div class="post-article-footer">
                     <div class="post-navigation">
                         <a href="/blog" class="btn btn-outline">
