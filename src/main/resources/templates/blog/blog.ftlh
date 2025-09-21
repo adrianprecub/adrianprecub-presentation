@@ -17,6 +17,20 @@
             <p class="blog-intro">
                 Welcome to my blog where I share insights on backend development, software architecture, and technology.
             </p>
+
+            <#if categories?has_content>
+                <div class="blog-categories">
+                    <h4>Browse by Category:</h4>
+                    <div class="categories-grid">
+                        <#list categories as category>
+                            <a href="/blog/category/${category['slug']}" class="category-badge">
+                                <span class="category-icon">📂</span>
+                                <span class="category-name">${category['name']}</span>
+                            </a>
+                        </#list>
+                    </div>
+                </div>
+            </#if>
             
             <div class="blog-posts-grid">
                 <#list posts as post>
@@ -25,10 +39,17 @@
                             <h3><a href="/blog/${post['slug']}" class="post-title-link">${post['title']}</a></h3>
                             <div class="post-meta">
                                 <span class="post-date">${post['published']?date}</span>
+                                <#if post['categories']?has_content>
+                                    <div class="post-categories">
+                                        <#list post['categories'] as category>
+                                            <a href="/blog/category/${category['slug']}" class="category category-link">${category['name']}</a>
+                                        </#list>
+                                    </div>
+                                </#if>
                                 <#if post['tags']??>
                                     <div class="post-tags">
                                         <#list post['tags'] as tag>
-                                            <span class="tag">${tag['name']}</span>
+                                            <a href="/blog/tag/${tag['slug']}" class="tag tag-link">${tag['name']}</a>
                                         </#list>
                                     </div>
                                 </#if>

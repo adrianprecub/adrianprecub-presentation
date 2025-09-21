@@ -19,10 +19,19 @@
                     
                     <div class="post-article-meta">
                         <span class="post-article-date">${post['published']?date}</span>
+                        <#if post['categories']?has_content>
+                            <div class="post-article-categories">
+                                <span class="meta-label">Categories:</span>
+                                <#list post['categories'] as category>
+                                    <a href="/blog/category/${category['slug']}" class="category category-link">${category['name']}</a><#if category_has_next>, </#if>
+                                </#list>
+                            </div>
+                        </#if>
                         <#if post['tags']??>
                             <div class="post-article-tags">
+                                <span class="meta-label">Tags:</span>
                                 <#list post['tags'] as tag>
-                                    <span class="tag">${tag['name']}</span>
+                                    <a href="/blog/tag/${tag['slug']}" class="tag tag-link">${tag['name']}</a><#if tag_has_next>, </#if>
                                 </#list>
                             </div>
                         </#if>
