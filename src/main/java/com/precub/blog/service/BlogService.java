@@ -29,7 +29,7 @@ public class BlogService {
     
     // Cache timestamps
     private volatile LocalDateTime lastCacheUpdate = null;
-    private static final long CACHE_DURATION_DAYS = 1;
+    private static final long CACHE_DURATION_HOURS = 24;
 
     public BlogService(IButterCMSClient butterCMSClient) {
         this.butterCMSClient = butterCMSClient;
@@ -37,7 +37,7 @@ public class BlogService {
     
     private boolean isCacheExpired() {
         return lastCacheUpdate == null || 
-               LocalDateTime.now().isAfter(lastCacheUpdate.plusDays(CACHE_DURATION_DAYS));
+               LocalDateTime.now().isAfter(lastCacheUpdate.plusHours(CACHE_DURATION_HOURS));
     }
     
     private void refreshCacheIfNeeded() {
