@@ -18,7 +18,7 @@
                     <h1 class="post-article-title">${post['title']}</h1>
                     
                     <div class="post-article-meta">
-                        <span class="post-article-date">${post['published']?date}</span>
+                        <div class="post-article-date">${post['published']?date}</div>
                         <#if post['categories']?has_content>
                             <div class="post-article-categories">
                                 <span class="meta-label">Categories:</span>

@@ -1532,12 +1532,14 @@ input[type=text], input[type=password], textarea {
 
 /* Blog Categories Section */
 .blog-categories {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #ffffff;
     border-radius: 16px;
     padding: 2rem;
-    margin: 2rem 0 3rem 0;
+    margin: 2rem auto 3rem auto;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 750px;
+    max-width: 100%;
 }
 
 .blog-categories h4 {
@@ -1607,7 +1609,9 @@ input[type=text], input[type=password], textarea {
 @media only screen and (max-width: 768px) {
     .blog-categories {
         padding: 1.5rem;
-        margin: 1.5rem 0 2rem 0;
+        margin: 1.5rem auto 2rem auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .categories-grid {
@@ -1625,6 +1629,8 @@ input[type=text], input[type=password], textarea {
     .blog-categories {
         padding: 1rem;
         border-radius: 12px;
+        margin: 1rem auto 1.5rem auto;
+        width: 100%;
     }
 
     .blog-categories h4 {
@@ -1685,10 +1691,9 @@ input[type=text], input[type=password], textarea {
 
 .post-article-meta {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
 }
 
 .post-article-date {
@@ -1697,10 +1702,12 @@ input[type=text], input[type=password], textarea {
     font-weight: 500;
 }
 
+.post-article-categories,
 .post-article-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    align-items: center;
 }
 
 .post-article-content {
@@ -1830,10 +1837,6 @@ input[type=text], input[type=password], textarea {
         font-size: 2rem;
     }
     
-    .post-article-meta {
-        flex-direction: column;
-        align-items: flex-start;
-    }
     
     .post-article-tags {
         width: 100%;
