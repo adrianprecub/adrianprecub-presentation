@@ -1422,6 +1422,7 @@ input[type=text], input[type=password], textarea {
     width: 100%;
     max-width: 100%;
     white-space: normal;
+    text-transform: none;
 }
 
 .post-title-link {
