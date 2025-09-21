@@ -6,18 +6,8 @@
 <body>
     <#include "../top.ftlh">
     
-    <section class="containerOuter" id="blogIntro">
-        <section class="containerInnerNarrow">
-            <h2>Blog</h2>
-        </section>
-    </section>
-    
     <section class="containerOuter blogBodyContainer">
         <section class="containerInner blogBody">
-            <p class="blog-intro">
-                Welcome to my blog where I share insights on backend development, software architecture, and technology.
-            </p>
-
             <#if categories?has_content>
                 <div class="blog-categories">
                     <h4>Browse by Category:</h4>
