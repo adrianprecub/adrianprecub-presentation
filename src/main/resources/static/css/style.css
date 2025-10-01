@@ -864,10 +864,9 @@ input[type=text], input[type=password], textarea {
 
 .blogBody p, .blogBody blockquote, .blogBody h1, .blogBody h2, .blogBody h3, .blogBody h4, .blogBody ul, .blogBody ol, .blogBody div.misc, div.syntaxhighlighter{
     display: block;
-    width: 750px;
+    width: 998px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.5em;
 }
 
 .blogBody table {
@@ -1665,7 +1664,7 @@ input[type=text], input[type=password], textarea {
 
 /* Individual Blog Post Page Styles */
 .blog-post-article {
-    max-width: 800px;
+    width: 998px;
     margin: 0 auto;
     background: #ffffff;
     border-radius: 12px;
@@ -1727,6 +1726,27 @@ input[type=text], input[type=password], textarea {
     padding: 2rem;
     line-height: 1.8;
     color: #2c3e50;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.post-article-content p,
+.post-article-content blockquote,
+.post-article-content h1,
+.post-article-content h2,
+.post-article-content h3,
+.post-article-content h4,
+.post-article-content ul,
+.post-article-content ol,
+.post-article-content div,
+.post-article-content pre,
+.post-article-content code {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box;
 }
 
 .post-article-content h1,
@@ -1806,7 +1826,6 @@ input[type=text], input[type=password], textarea {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 1.5rem 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
