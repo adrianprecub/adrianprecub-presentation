@@ -632,9 +632,12 @@ footer .bio img {
 }
 
 .containerInner {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
     overflow: auto;
+    box-sizing: border-box;
 }
 
 .containerInnerNarrow {
@@ -846,12 +849,14 @@ input[type=text], input[type=password], textarea {
 .blogBody {
     border-left: 1px solid #F8F1EB;
     border-right: 1px solid #F8F1EB;
-    width: 998px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    max-width: 998px;
+    width: 100%;
+    padding: 0.5em 1rem;
     font-size: 95%;
     position: relative;
     overflow: visible!important;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -864,9 +869,11 @@ input[type=text], input[type=password], textarea {
 
 .blogBody p, .blogBody blockquote, .blogBody h1, .blogBody h2, .blogBody h3, .blogBody h4, .blogBody ul, .blogBody ol, .blogBody div.misc, div.syntaxhighlighter{
     display: block;
-    width: 998px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
 }
 
 .blogBody table {
@@ -915,14 +922,13 @@ input[type=text], input[type=password], textarea {
 }
 
 .blogBody pre, .blogBodyNarrow pre {
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
     background-color: #fcfcfc;
     border: 1px dashed #e0e0e0;
     overflow: auto;
     padding: 1em;
-    /*	font-size: 85%; */
     font-size: 100%;
     margin: 1em auto;
 }
@@ -1664,7 +1670,8 @@ input[type=text], input[type=password], textarea {
 
 /* Individual Blog Post Page Styles */
 .blog-post-article {
-    width: 998px;
+    max-width: 998px;
+    width: 100%;
     margin: 0 auto;
     background: #ffffff;
     border-radius: 12px;
@@ -1859,49 +1866,78 @@ input[type=text], input[type=password], textarea {
     font-size: 1rem;
 }
 
+/* Comments Section */
+.comments-section {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
 /* Responsive Design for Individual Blog Post */
+@media only screen and (max-width: 1000px) {
+    .blog-post-article {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .post-article-header {
         padding: 1.5rem 1rem 1rem 1rem;
     }
-    
+
     .post-article-title {
         font-size: 2rem;
     }
-    
-    
+
+
     .post-article-tags {
         width: 100%;
         justify-content: flex-start;
     }
-    
+
     .post-article-content {
         padding: 1.5rem 1rem;
     }
-    
+
     .post-article-footer {
+        padding: 1rem;
+    }
+
+    .comments-section {
         padding: 1rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .post-article-title {
-        font-size: 1.75rem;
+    .post-article-header {
+        padding: 1rem;
     }
-    
+
+    .post-article-title {
+        font-size: 1.5rem;
+    }
+
     .post-article-content {
         padding: 1rem;
     }
-    
-    .post-article-content h1 { font-size: 1.75rem; }
-    .post-article-content h2 { font-size: 1.5rem; }
-    .post-article-content h3 { font-size: 1.25rem; }
-    .post-article-content h4 { font-size: 1.125rem; }
+
+    .post-article-content h1 { font-size: 1.5rem; }
+    .post-article-content h2 { font-size: 1.35rem; }
+    .post-article-content h3 { font-size: 1.2rem; }
+    .post-article-content h4 { font-size: 1.1rem; }
     .post-article-content h5 { font-size: 1rem; }
-    .post-article-content h6 { font-size: 0.875rem; }
-    
+    .post-article-content h6 { font-size: 0.9rem; }
+
     .post-article-tags {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    .post-article-footer {
+        padding: 1rem;
+    }
+
+    .comments-section {
+        padding: 0.5rem;
     }
 }
 
