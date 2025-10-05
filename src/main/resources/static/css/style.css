@@ -1545,8 +1545,41 @@ input[type=text], input[type=password], textarea {
     }
     
     .no-posts {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
     }
+}
+
+/* Blog Search Section */
+.blog-search {
+    margin-bottom: 0.25rem;
+}
+
+.search-form {
+    display: flex;
+    gap: 0.25rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+}
+
+.search-form .btn {
+    white-space: nowrap;
+    margin-bottom: 0;
 }
 
 /* Blog Categories Section */

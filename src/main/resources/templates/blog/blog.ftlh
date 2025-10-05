@@ -8,6 +8,20 @@
     
     <section class="containerOuter blogBodyContainer">
         <section class="containerInner blogBody">
+            <div class="blog-search">
+                <form action="/blog/search" method="get" class="search-form">
+                    <input type="text"
+                           name="q"
+                           placeholder="Search blog posts..."
+                           value="${RequestParameters.q!''}"
+                           class="search-input"
+                           autocomplete="off">
+                    <button type="submit" class="btn btn-primary">
+                        <span class="icon">🔍</span> Search
+                    </button>
+                </form>
+            </div>
+
             <#if categories?has_content>
                 <div class="blog-categories">
                     <h4>Browse by Category:</h4>
