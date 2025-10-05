@@ -1585,27 +1585,27 @@ input[type=text], input[type=password], textarea {
 /* Blog Categories Section */
 .blog-categories {
     background: #ffffff;
-    border-radius: 16px;
-    padding: 0.5rem;
-    margin: 0.5rem auto 1rem auto;
+    border-radius: 12px;
+    padding: 0.25rem 0.25rem;
+    margin: 0.5rem auto 0.5rem auto;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     width: 750px;
     max-width: 100%;
 }
 
 .blog-categories h4 {
     color: #495057;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.3px;
 }
 
 .categories-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -1613,18 +1613,17 @@ input[type=text], input[type=password], textarea {
 .category-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     background: #ffffff;
     color: #495057;
     text-decoration: none;
-    padding: 0.75rem 1.25rem;
-    border-radius: 25px;
-    border: 2px solid #dee2e6;
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    border: 1.5px solid #dee2e6;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    min-width: 120px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
     justify-content: center;
 }
 
