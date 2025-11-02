@@ -753,7 +753,6 @@ input[type=text], input[type=password], textarea {
 
 .bioBox h4 {
     margin-top: 0;
-    text-transform: uppercase;
     margin-bottom:1em;
     color: #575E5B;
 }
@@ -1284,7 +1283,6 @@ input[type=text], input[type=password], textarea {
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
@@ -1466,7 +1464,6 @@ input[type=text], input[type=password], textarea {
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
