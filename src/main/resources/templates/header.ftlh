@@ -3,7 +3,6 @@
         <title>${pageTitle}</title>
         <meta charset="UTF-8">
 
-        <title>${seoTitle}"></title>
         <meta name="description" content="${seoDescription}"/>
         <meta name="author" content="Adrian Precub">
         <meta name="copyright" content="Adrian Precub">

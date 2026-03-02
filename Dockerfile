@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temurin:17-jdk
 
 RUN groupadd --system spring && useradd --system --gid spring spring
 USER spring:spring

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <#include "../header.ftlh">
-<@header pageTitle="Blog" seoTitle="${seoTitle}" seoDescription="${seoDescription}"/>
+<@header pageTitle="${post['title']}" seoTitle="${seoTitle}" seoDescription="${seoDescription}"/>
 
 <body>
     <#include "../top.ftlh">
@@ -48,7 +48,7 @@
                             data-repo-id="R_kgDOH3SKlg"
                             data-category="General"
                             data-category-id="DIC_kwDOH3SKls4CvI-G"
-                            data-mapping="title"
+                            data-mapping="pathname"
                             data-strict="0"
                             data-reactions-enabled="1"
                             data-emit-metadata="0"
